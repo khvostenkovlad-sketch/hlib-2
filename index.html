@@ -170,6 +170,15 @@
   .spec li .v{font-family:var(--display);font-weight:700;color:var(--white)}
   .spec li .v.hot{color:var(--track)}
   @media (max-width:820px){.pilot-grid{grid-template-columns:1fr}.licence{margin:0 auto;max-width:360px;width:100%}}
+  @media (max-width:600px){
+    .spec{gap:0}
+    .spec li{grid-template-columns:1fr;gap:2px;padding:12px 0;border-bottom:2px dotted rgba(255,255,255,.18)}
+    .spec li:last-child{border-bottom:0}
+    .spec li .dots{display:none}
+    .spec li .v{font-size:1.15rem;line-height:1.2}
+    .pilot-copy h3{font-size:clamp(22px,7vw,30px)}
+    .px:not(.chk){display:none}   /* no decorative cars behind text on phones */
+  }
 
   /* ---------- DETAILS ---------- */
   .details{background:var(--white);color:var(--ink);position:relative}
